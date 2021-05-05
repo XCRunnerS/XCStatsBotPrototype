@@ -2,10 +2,15 @@
 
 # XCStatsBot
 
-Made to display Hypixel stats, and teach me discord.py/hypixel.py stuff!
+Made to display Hypixel stats!
+Current features:
+!skywars (skywar, skw, sw)
+!bedwars (bedwars, bws, bw)
+
 
 [![discord.py](https://img.shields.io/badge/discord-py-blue.svg)](https://github.com/Rapptz/discord.py)
-
+## Donation links for XCRunnerS#7188
+[![ko-fi](https://www.vectorlogo.zone/logos/ko-fi/ko-fi-ar21.svg)](https://ko-fi.com/xcrunners)
 
 <!--
 ## Donation links for ice (and me to remember links lmao)
