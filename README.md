@@ -11,9 +11,11 @@ and from Iaptus's bot: https://github.com/Iapetus-11/Hypixel-Stats
 
 Current features:
 
-!skywars (skywar, skw, sw)
+2 prefixes (. and h!)
 
-!bedwars (bedwars, bws, bw)
+.skywars (skywar, skw, sw)
+
+.bedwars (bedwars, bws, bw)
 
 ### Donation links for XCRunnerS#7188
 [![ko-fi](https://www.vectorlogo.zone/logos/ko-fi/ko-fi-ar21.svg)](https://ko-fi.com/xcrunners)
