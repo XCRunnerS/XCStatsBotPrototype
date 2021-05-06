@@ -15,7 +15,7 @@ class Skywarscommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-
+    #Get skywars stats
     @commands.command(name="skywars", aliases=["skywar", "skw", "sw"])
     async def skywars(self, ctx, ign):
             # I skipped ign listing, gotten from command
@@ -24,15 +24,16 @@ class Skywarscommands(commands.Cog):
             uuid = uuidurl["id"]
             # sets uuid
 
+            #access hypixel api and then get data from the json file
             jsonurl = f"https://api.hypixel.net/player?key={API_KEY}&uuid={uuid}"
             jsondump = json.loads(urlopen(jsonurl).read().decode("utf-8"))
 
-            # get the wins/losses here
+            # get the wins/losses here (DIRECTLY from hypixel api!)
             sw_wins = (jsondump['player']['stats']['SkyWars']['wins'])
             sw_losses = (jsondump['player']['stats']['SkyWars']['losses'])
             float(sw_wins)  # makes it so I can make the nums clean with ,s
             float(sw_losses)
-            round_sw_wl = format((sw_wins / sw_losses), ',.2f')
+            round_sw_wl = format((sw_wins / sw_losses), ',.2f') # format stats
             # get the kills/deaths here
             sw_kills = (jsondump['player']['stats']['SkyWars']['kills'])
             sw_deaths = (jsondump['player']['stats']['SkyWars']['deaths'])
