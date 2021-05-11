@@ -7,22 +7,32 @@ import asyncio
 from urllib.request import urlopen
 import json
 
-bot = commands.Bot(command_prefix=['.','h!'])
 API_KEY = os.environ.get('HYPIXEL_API')
 DISCORD = os.environ.get('DISCORD_KEY')
+
+bot = commands.Bot(command_prefix=['.', 'h!'])
 
 
 for extension in os.listdir('./cogs'):
     if extension.endswith('.py'):
         bot.load_extension("cogs." + extension[:-3])
-#all my commands are in ./cogs/filename.py :) [prefix]help will show you in discord
+# all my commands are in ./cogs/filename.py :) [prefix]help will show you in discord
 
-#prints bot message in console
+# prints bot message in console
+
+
 @bot.event
 async def on_ready():
     print('Bot Ready')
+    await bot.wait_until_ready()
+    channel = bot.get_channel(804132338438766613)
+    await channel.send('👀')
 
-#non-existing commands
+# 376900391440220174
+
+# non-existing commands
+
+
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):

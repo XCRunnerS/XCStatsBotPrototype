@@ -8,7 +8,6 @@ Made to display Hypixel stats using discord.py!
 This bot takes heavy inspiration from Ice's bot: https://github.com/HypixelBot/bot 
 and from Iaptus's bot: https://github.com/Iapetus-11/Hypixel-Stats
 
-
 Current features:
 
 2 prefixes (. and h!)
