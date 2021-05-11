@@ -1,6 +1,6 @@
 ![stop sign](https://github.com/XCRunnerS/XCStatsBotPrototype/blob/main/hypixelspashv2layered.png?raw=true)
 
-# XStats Bot
+# Relocated to https://github.com/XCRunnerS/XCStatsbot
 
 [![discord.py](https://img.shields.io/badge/discord-py-teal.svg)](https://github.com/Rapptz/discord.py)
 
